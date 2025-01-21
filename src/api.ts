@@ -20,7 +20,7 @@ interface Data {
 }
 
 export default async function api() {
-  const res: jsonData = await axios.get("../all_groups.json");
+  const res: jsonData = await axios.get("./all_groups.json");
 
 
 

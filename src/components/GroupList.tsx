@@ -18,10 +18,10 @@ function GroupList() {
 
   const renderData = data.map((data) => {
     return (
-      // <Link to={`/detail/${data.Name}`}
-      // className="col-span-2">
+      <Link to={`/detail/${data.Name}`}
+      className="col-span-2">
         <GroupListShow key={data.Id} group={data} /> 
-      // </Link>
+      </Link>
     );
   });
 

@@ -1,10 +1,8 @@
 import GroupList from "./components/GroupList";
-import Nav from "./components/Nav";
 import SearchBar from "./components/SearchBar";
-import { createBrowserRouter, Router, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Root from "./root/Root";
 import ShowDetail from "./components/ShowDetail";
-import type { GroupType } from "./data-interface/GroupType";
 
 const router = createBrowserRouter([
   {
@@ -30,14 +28,7 @@ const router = createBrowserRouter([
 
 function App() {
 return(
-  <div>
-    <Nav />
-    <div>
-      {/* <SearchBar /> */}
-      <GroupList />
-    </div>
-  </div>
-  // <RouterProvider router={router} />
+  <RouterProvider router={router} />
 )
 
   // return (
