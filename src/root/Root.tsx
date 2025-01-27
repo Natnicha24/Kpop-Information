@@ -1,10 +1,11 @@
 import { Outlet } from "react-router-dom";
 import Nav from "../components/Nav";
-
 function Root() {
   return (
     <div>
-      <Nav />
+      <div>
+        <Nav />
+      </div>
       <div>
         <Outlet />
       </div>
@@ -13,3 +14,19 @@ function Root() {
 }
 
 export default Root
+
+// import { Outlet } from "react-router-dom";
+// import Nav from "../components/Nav";
+
+// function Root() {
+//   return (
+//     <div>
+//       <Nav />
+//       <div>
+//         <Outlet />
+//       </div>
+//     </div>
+//   );
+// }
+
+// export default Root
