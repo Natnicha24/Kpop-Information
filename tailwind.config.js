@@ -6,14 +6,16 @@ export default {
   ],
   theme: {
     extend: {
-      colors:{
-        customBlack:'#1D1616',
-        customGrey:'#EEEEEE'
+      colors: {
+        customBlack: '#1D1616',
+        customGrey: '#EEEEEE'
       },
-      fontFamily:{
-        agbalumo:["Agbalumo", 'roboto'],
-        Mali:["Mali",'roboto']
-        
+      fontFamily: {
+        agbalumo: ["Agbalumo", 'roboto'],
+        Mali: ["Mali", 'roboto']
+      },
+      screens: {
+        'xs': '320px'
       }
     },
   },

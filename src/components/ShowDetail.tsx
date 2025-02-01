@@ -9,7 +9,8 @@ function ShowDetail() {
     groupdetail[0].FandomName = "-";
   }
   return (
-    <div className="bg-customGrey w-screen min-h-[calc(100vh-48px)] flex justify-center items-center px-20 py-10">
+    <div className="bg-customGrey w-screen min-h-[calc(100vh-48px)] 
+    flex justify-center items-center px-20 py-10 md:px-20 xs:px-9">
       <div
         className="grid grid-cols-2
       sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3
@@ -17,7 +18,7 @@ function ShowDetail() {
       max-w-[1000px]"
       >
         <div className="col-span-2 rounded-md  overflow-hidden">
-          <img src={groupdetail[0].Image} alt="grouplist" className="" />
+          <img src={groupdetail[0].Image} alt="grouplist" className="w-full" />
         </div>
         <div className="p-4 col-span-2 sm:col-span-2 md:col-span-2 lg:col-span-1">
           <p

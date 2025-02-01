@@ -23,10 +23,13 @@ export interface DetailLoaderProps {
   groupdetail: GroupType[];
 }
 
-async function DetailLoader({ params }: { params: Params }):Promise<DetailLoaderProps> {
+async function DetailLoader({
+  params,
+}: {
+  params: Params;
+}): Promise<DetailLoaderProps> {
   const { id } = params;
-
-  const res: jsonData = await axios.get("./all_groups.json");
+  const res: jsonData = await axios.get("/all_groups.json");
   const resfilter = res.data.filter((data) => {
     return id == `${data.Id}`;
   });
