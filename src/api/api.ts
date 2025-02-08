@@ -5,7 +5,7 @@ interface jsonData {
   data: Data[];
 }
 
-interface Data {
+interface Data { //Dataresponse
   Active: string;
   Company: string;
   CurrentMemberCount: number;
